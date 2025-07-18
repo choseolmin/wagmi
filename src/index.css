@@ -1,0 +1,187 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #fff;
+  background-color: #181A20;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #181A20;
+  color: #fff;
+  /* display, align-items, justify-content 등 중앙 정렬 관련 스타일 제거 */
+}
+
+.app-center-layout {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  background: #23262F;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  min-width: 320px;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 98vw;
+  }
+}
+
+.input {
+  padding: 0.75em 1em;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  background: #181A20;
+  color: #fff;
+}
+
+.button {
+  background: linear-gradient(90deg, #646cff 0%, #61dafb 100%);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5em;
+}
+.button:disabled {
+  background: #333;
+  cursor: not-allowed;
+  border: 2px solid #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 2rem 1rem 2rem;
+  background: #23262F;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 2rem;
+  color: #fff;
+  max-width: 400px;
+  min-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wallet-list {
+  position: absolute;
+  background: #23262F;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  z-index: 10;
+  color: #fff;
+  min-width: 200px;
+}
+
+h1, h2, h3, p, label, span, div, input, button {
+  color: #fff !important;
+}
+
+/* RainbowKit 모달 중앙 정렬 강제 */
+.rk-modal,
+.rk-dialog,
+.rk-dialog__container {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
